@@ -372,10 +372,11 @@ def api_only():
 
     print(f"Startup time: {startup_timer.summary()}.")
     api.launch(
-    server_name="209.20.159.209",  # Ovdje je vaša IP adresa
-    port=7860,  # Postavite port na 7860
+    server_name="0.0.0.0",
+    port=7870,
     root_path=f"/{cmd_opts.subpath}" if cmd_opts.subpath else ""
 )
+
 
 
 
